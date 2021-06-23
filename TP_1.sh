@@ -28,5 +28,6 @@ az vm extension set \
   --name CustomScript \
   --vm-name $MyVM \
   --resource-group $MyResourceGroup \
-  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx"}'
+  -- custom-data cloud-init.cfg
+ # --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx"}'
 
